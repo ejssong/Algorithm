@@ -31,3 +31,19 @@ func validateStackSequences(_ pushed: [Int], _ popped: [Int]) -> Bool {
     return stack.isEmpty
 }
 
+//MARK: 풀이 개선
+func validateStackSequences1(_ pushed: [Int], _ popped: [Int]) -> Bool {
+    var stack : [Int] = []
+    var currentPoint = 0
+    
+    for i in 0..<pushed.count {
+        stack.append(pushed[i])
+        
+        while (!stack.isEmpty && stack.last == popped[currentPoint]) {
+            stack.removeLast()
+            currentPoint += 1
+        }
+    }
+    return stack.isEmpty
+}
+
