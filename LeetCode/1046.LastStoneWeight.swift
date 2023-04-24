@@ -4,7 +4,9 @@
 //
 //  Created by ejsong on 2023/04/24.
 //
-
+/*
+Link : https://leetcode.com/problems/last-stone-weight/description/
+ */
 import Foundation
 
 func lastStoneWeight(_ stones: [Int]) -> Int {
