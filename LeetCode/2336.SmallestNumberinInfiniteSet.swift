@@ -9,7 +9,6 @@ import Foundation
 
 class SmallestInfiniteSet {
     private var resultArray = Set<Int>()
-    private var num = 1
 
     init() {
         
