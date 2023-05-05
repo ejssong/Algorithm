@@ -15,7 +15,6 @@ func maxVowels(_ s: String, _ k: Int) -> Int {
     for i in 0..<s.count {
         current += vowels.contains(s[i]) ? 1 : 0
         if i >= k {
-            print(i - k)
             current -= vowels.contains(s[i - k]) ? 1 : 0
         }
         result = max(result, current)
